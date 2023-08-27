@@ -25,9 +25,17 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.grey[900],
       body: SafeArea(
         child: Center(
-          child: SpinKitCubeGrid(
-            color: Colors.green,
-            size: 80,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image(
+                image: AssetImage('assets/images/logo.png'),
+              ),
+              SpinKitWave(
+                color: Colors.green,
+                size: 30,
+              ),
+            ],
           ),
         ),
       ),
